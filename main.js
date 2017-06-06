@@ -62,7 +62,6 @@ app.movement = {
       }
 
       for( var i = 1; i < app.snake.body.segments.length; i++ ){
-        // debugger
         if( this.intersection( head, app.snake.body.segments[i] ) ){
           app.snake.body.alive = false;
           return;
